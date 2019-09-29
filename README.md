@@ -1,0 +1,1 @@
+This is a demo that shows how asynchronous requests can be done in python. This significantly speeds up API request because the program does not have to wait for each response before moving onto the next step.
