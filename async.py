@@ -6,9 +6,6 @@ import time
 import json
 
 
-testing_app_url = "https://httpbin.org/anything/"
-
-
 async def main():
     async with aiohttp.ClientSession() as session:
         await asyncio.gather(*(_get_response(session, i) for i in range(25)))
@@ -22,8 +19,8 @@ async def _get_response(session: "ClientSession", i):
         print(r["url"])
 
 
+testing_app_url = "https://httpbin.org/anything/"
 times = []
-
 
 loop = asyncio.get_event_loop()
 
